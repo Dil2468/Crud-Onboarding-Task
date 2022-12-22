@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "ignored": "true",
+      "type": "appInsights"
+    },
+    "mssql2": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:ConnecttoDatabase"
+    },
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/task1dbserver/databases/Task1",
+      "type": "mssql.azure",
+      "connectionId": "ConnecttoDatabase"
+    }
+  }
+}
